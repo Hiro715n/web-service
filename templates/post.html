@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>投稿ページ</title>
+</head>
+<body>
+    <div class="form">
+        <a href="./">
+            <h1>プレゼント選びサービス</h1>
+        </a>
+        <h3>お渡ししたプレゼント情報を入力してください</h3>
+        
+        <!--性別選択箇所-->
+        <p>お相手の性別を選択してください</p>
+        <form action="./post" method="POST" enctype="multipart/form-data">
+            <div>
+                <label for="sex_men">男性:</label>
+                <input type="radio" id="gender_men" name="gender"  value="男性">
+            </div>
+            <div>
+                <label for="sex_women">女性:</label>
+                <input type="radio" id="gender_women" name="gender" value="女性">
+            </div>
+
+            
+        <!--関係選択箇所-->
+        <p>お相手との関係を選択してください</p>
+            <div>
+                <label for="couple">恋人:</label>
+                <input type="radio" id="couple" name="relation" value="恋人">
+            </div>
+            <div>
+                <label for="friend">友人:</label>
+                <input type="radio" id="friend" name="relation" value="友人">
+            </div>
+            <div>
+                <label for="family">家族:</label>
+                <input type="radio" id="family" name="relation" value="家族">
+            </div>
+
+
+
+        <!--年齢選択箇所-->
+        <p>お相手の年齢を選択してください</p>
+            <div>
+                <label for="ten">10代:</label>
+                <input type="radio" id="ten" name="age" value="10">
+            </div>
+            <div>
+                <label for="twenty">20代:</label>
+                <input type="radio" id="twenty" name="age" value="20">
+            </div>
+            <div>
+                <label for="thirty">30代:</label>
+                <input type="radio" id="thirty" name="age" value="30">
+            </div>
+            <div>
+                <label for="fourty">40代:</label>
+                <input type="radio" id="fourty" name="age" value="40">
+            </div>
+            <div>
+                <label for="fifty">50代:</label>
+                <input type="radio" id="fifty" name="age" value="50">
+            </div>
+
+
+
+        <!--予算設定箇所-->
+        <p>プレゼントの金額を教えてください</p>
+            <div>
+                <label for="sanzenn">3000円以下</label>
+                <input type="radio" id="sanzenn" name="price" value="3000">
+            </div>
+            <div>
+                <label for="gosen">5000円以下</label>
+                <input type="radio" id="gosen" name="price" value="5000">
+            </div>
+            <div>
+                <label for="itiman">10000円以下</label>
+                <input type="radio" id="itiman" name="price" value="10000">
+            </div>
+            <div>
+                <label for="sanman">30000円以下</label>
+                <input type="radio" id="sanman" name="price" value="30000">
+            </div>
+            <div>
+                <label for="above">50000円以下</label>
+                <input type="radio" id="above" name="price" value="50000">
+            </div>
+
+
+        <!--目的選択箇所-->
+        <p>何の日でしたか？？</p>
+            <div>
+                <label for="birthday">誕生日:</label>
+                <input type="radio" id="birthday" name="obejct" value="誕生日">
+            </div>
+            <div>
+                <label for="xmas">クリスマス:</label>
+                <input type="radio" id="xmas" name="obejct" value="クリスマス">
+            </div>
+            <div>
+                <label for="anniversay">記念日:</label>
+                <input type="radio" id="anniversary" name="obejct" value="記念日">
+            </div>
+
+        <!--プレゼント名称-->
+        <p>プレゼントは何をあげましたか？</p>
+        <div>
+            <input type="text" id="presnet" name="item" value="">
+        </div>
+        
+        <input type="submit" value="投稿">
+	    </form>
+
+    </div>
+</body>
+</html>
